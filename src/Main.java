@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        //Задача 1//
-        //1
+        //Задача 4//////////////////////////////
         int[] numbers = new int[3];
         numbers[0] = 1;
         numbers[1] = 2;
         numbers[2] = 3;
+        ////////////////////////////////////////
         //2
         double [] numbers2 = {1.57, 7.654, 9.986};
         //3
@@ -74,7 +74,15 @@ public class Main {
         }
         //ЗАДАЧА 4
         System.out.println();
-        System.out.println("ЗАДАЧА 4 ВЫПОЛНЕНА В ОТДЕЛЬНОЙ ВЕТКЕ");
+        int test = numbers.length-1;
+        for (int t = test;t<numbers.length;t++) {
+            if (t % 2 != 0) {
+                t = t + 1;
+                System.out.println(numbers[t]);
+            } else {
+                System.out.println(numbers[t]);
+            }
+        }
 
     }
 }
