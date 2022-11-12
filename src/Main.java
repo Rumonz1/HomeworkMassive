@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        //Задача 4//////////////////////////////
+        //Задача 1//////////////////////////////
         int[] numbers = new int[3];
         numbers[0] = 1;
         numbers[1] = 2;
@@ -74,15 +74,14 @@ public class Main {
         }
         //ЗАДАЧА 4
         System.out.println();
-        int test = numbers.length-1;
-        for (int t = test;t<numbers.length;t++) {
-            if (t % 2 != 0) {
-                t = t + 1;
-                System.out.println(numbers[t]);
-            } else {
-                System.out.println(numbers[t]);
+        for (int r = 0; r < numbers.length;r++) {
+            if (numbers[r]%2!=0){
+                numbers[r]=numbers[r]+1;
+                System.out.println(numbers[r]);
+            } else if (numbers[r]%2==0) {
+                System.out.println(numbers[r]);
+
             }
         }
-
-    }
+        }
 }
